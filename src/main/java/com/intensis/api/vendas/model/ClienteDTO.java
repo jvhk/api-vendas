@@ -13,6 +13,7 @@ public class ClienteDTO {
 
     private UUID uuid;
     private String nome;
+    private String cpf;
     private String email;
     private String telefone;
 

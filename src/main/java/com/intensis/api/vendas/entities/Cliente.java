@@ -17,6 +17,9 @@ public class Cliente {
     @Column(name = "nome")
     private String nome;
 
+    @Column(name = "cpf")
+    private String cpf;
+
     @Column(name = "email")
     private String email;
 
