@@ -21,7 +21,7 @@ public class ClienteService {
     private ClienteMapper mapper;
 
     @Autowired
-    ClienteRepository repository;
+    private ClienteRepository repository;
 
     public void cadastrarCliente(ClienteDTO dto){
         if(dto != null){
