@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -23,5 +24,8 @@ public class Produto {
 
     @Column(name = "preco")
     private BigDecimal preco;
+
+    @OneToMany(mappedBy = "produto")
+    private List<ProdutoVendido> vendas;
 
 }

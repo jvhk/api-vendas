@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,7 +29,6 @@ public class Venda {
     private BigDecimal valorTotal;
 
     @OneToMany(mappedBy = "venda", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ItemVenda> itensVendidos;
-
+    private List<ProdutoVendido> itensVendidos = new ArrayList<>();
 
 }

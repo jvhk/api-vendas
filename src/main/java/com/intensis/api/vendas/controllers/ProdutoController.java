@@ -24,7 +24,7 @@ public class ProdutoController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    @GetMapping("/listar")
+    @GetMapping
     public ResponseEntity<List<ProdutoDTO>> listarProdutos(){
         return new ResponseEntity<>(service.listarProdutos(), HttpStatus.OK);
     }
