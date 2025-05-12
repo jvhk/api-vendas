@@ -1,28 +1,17 @@
-# Getting Started
+# API de Vendas
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### A aplicação 
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.4.5/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.4.5/maven-plugin/build-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.4.5/reference/web/servlet.html)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/3.4.5/reference/data/sql.html#data.sql.jpa-and-spring-data)
-* [Validation](https://docs.spring.io/spring-boot/3.4.5/reference/io/validation.html)
+* Você deve desenvolver uma API REST que permita consultar, salvar, excluir e editar: produtos, clientes e vendas. Dentro das vendas, deve ser possível adicionar, remover e editar itens. 
+* A venda deve associar um cliente a um ou vários produtos diferentes, registrando também a quantidade de cada produto vendido, bem como o valor total da venda.
+ 
+#### Implementar as seguintes regras de negócio:
 
-### Guides
-The following guides illustrate how to use some features concretely:
+* Permitir salvar o cliente apenas se o CPF ou CNPJ informado for válido. Dica: implemente as validações de CPF e CNPJ do site abaixo: https://www.campuscode.com.br/conteudos/o-calculo-do-digito-verificador-do-cpf-e-do-cnpj)
+* Cada venda deve ter apenas um cliente associado, mas pode conter um ou muitos produtos.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Validation](https://spring.io/guides/gs/validating-form-input/)
-
-### Maven Parent overrides
-
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+OBS: Esses requisitos e atributos são apenas uma sugestão, você é livre para
+implementar da forma que achar conveniente e realizar melhorias/modificações no
+Projeto. Atente-se apenas aos atributos citados na descrição do problema.
+Apenas se atente a escrever um código limpo e organizado.
 
