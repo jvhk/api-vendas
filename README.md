@@ -1,17 +1,19 @@
 # API de Vendas
 
-### A aplicação 
+### A aplicaï¿½ï¿½o 
 
-* Você deve desenvolver uma API REST que permita consultar, salvar, excluir e editar: produtos, clientes e vendas. Dentro das vendas, deve ser possível adicionar, remover e editar itens. 
-* A venda deve associar um cliente a um ou vários produtos diferentes, registrando também a quantidade de cada produto vendido, bem como o valor total da venda.
+* Vocï¿½ deve desenvolver uma API REST que permita consultar, salvar, excluir e editar: produtos, clientes e vendas. Dentro das vendas, deve ser possï¿½vel adicionar, remover e editar itens. 
+* A venda deve associar um cliente a um ou vï¿½rios produtos diferentes, registrando tambï¿½m a quantidade de cada produto vendido, bem como o valor total da venda.
  
-#### Implementar as seguintes regras de negócio:
+#### Implementar as seguintes regras de negï¿½cio:
 
-* Permitir salvar o cliente apenas se o CPF ou CNPJ informado for válido. Dica: implemente as validações de CPF e CNPJ do site abaixo: https://www.campuscode.com.br/conteudos/o-calculo-do-digito-verificador-do-cpf-e-do-cnpj)
+* Permitir salvar o cliente apenas se o CPF ou CNPJ informado for vï¿½lido. Dica: implemente as validaï¿½ï¿½es de CPF e CNPJ do site abaixo: https://www.campuscode.com.br/conteudos/o-calculo-do-digito-verificador-do-cpf-e-do-cnpj)
 * Cada venda deve ter apenas um cliente associado, mas pode conter um ou muitos produtos.
 
-OBS: Esses requisitos e atributos são apenas uma sugestão, você é livre para
-implementar da forma que achar conveniente e realizar melhorias/modificações no
-Projeto. Atente-se apenas aos atributos citados na descrição do problema.
-Apenas se atente a escrever um código limpo e organizado.
+### EspecificaÃ§Ã£o:
+
+* Implemente o backend utilizando a linguagem/framework que vocÃª se sentir mais confortÃ¡vel, o Ãºnico requisito Ã© que seja aplicado o paradigma de orientaÃ§Ã£o a objetos.
+* Escolha um banco de dados relacional de sua preferÃªncia para persistir as informaÃ§Ãµes da aplicaÃ§Ã£o.
+* Utilize HTML, CSS e Javascript para criaÃ§Ã£o do frontend.
+* Crie um repositÃ³rio pÃºblico no Github para o projeto e forneÃ§a a URL ao final do teste.
 
